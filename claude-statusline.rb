@@ -10,7 +10,7 @@ class ClaudeStatusline < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/callmemorgan/claude-statusline/releases/download/v0.1.0/claude-statusline_Darwin_x86_64.tar.gz"
-      sha256 "dd5d9ad1fee33400e8b4195d24fa71d059f63c925673130f0e566652b9e3f389"
+      sha256 "f02d37d97c7873388bf32d45c2496a7e31f532ec456a7b3371327337b74237bd"
 
       define_method(:install) do
         bin.install "claude-statusline"
@@ -18,7 +18,7 @@ class ClaudeStatusline < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/callmemorgan/claude-statusline/releases/download/v0.1.0/claude-statusline_Darwin_arm64.tar.gz"
-      sha256 "67eb1139e8ce1f2b065ed97a07c0c5fc7df88ace5e3ddcacb49b2730832bffb7"
+      sha256 "cf8eaba1b66fd8e4a0f6966d2a52fe03f169a65fa594965a99807fb6995b3cce"
 
       define_method(:install) do
         bin.install "claude-statusline"
@@ -29,14 +29,14 @@ class ClaudeStatusline < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/callmemorgan/claude-statusline/releases/download/v0.1.0/claude-statusline_Linux_x86_64.tar.gz"
-      sha256 "1a87b17a3dd598e4172eb7192183315484945625ae68d7d86e9101929d3281dd"
+      sha256 "c8aebc41490f8840d7fce00fe662556d7fb7d3349cc7f279e757f0e0309a6046"
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/callmemorgan/claude-statusline/releases/download/v0.1.0/claude-statusline_Linux_arm64.tar.gz"
-      sha256 "9e1b2c1fc47078bb6a0cfb97b77f5dc4d66fdc80c5a2db7dc20c275c3470f986"
+      sha256 "dc22554273bce1380b8f90aa87c35ab419a42e789bfb8c46da25b5ee07f315c5"
       define_method(:install) do
         bin.install "claude-statusline"
       end
