@@ -5,20 +5,20 @@
 class ClaudeStatusline < Formula
   desc "Statusline renderer for Claude Code and Antigravity CLI"
   homepage "https://github.com/callmemorgan/claude-statusline"
-  version "1.2.4"
+  version "1.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.2.4/claude-statusline_Darwin_x86_64.tar.gz"
-      sha256 "69eee9e54d8384e840e9fda98051be1a28425345a569a42bf6ffe87cf762cfb5"
+      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.3.0/claude-statusline_Darwin_x86_64.tar.gz"
+      sha256 "337154acf70b2119c040f7b549b39359aa1c5a2c091d14d9199fe8251dd53f82"
 
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.2.4/claude-statusline_Darwin_arm64.tar.gz"
-      sha256 "9ee1843da8b86deaf8e7bdc67da278aab8fb53f7d7cfe7b0e79c6e8894a34990"
+      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.3.0/claude-statusline_Darwin_arm64.tar.gz"
+      sha256 "4d2b8577848dfa8f00dd6bcbfad818774e4643ea6feecc1ba023e2d259cacdd6"
 
       define_method(:install) do
         bin.install "claude-statusline"
@@ -28,15 +28,15 @@ class ClaudeStatusline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.2.4/claude-statusline_Linux_x86_64.tar.gz"
-      sha256 "63b62d6ee024a3222edc4e092f725b36649869bec6a588beb02981b462062f36"
+      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.3.0/claude-statusline_Linux_x86_64.tar.gz"
+      sha256 "85e87b260afc826714930480bedb75ff7cf021285d3d25a765f8be0edb61b96c"
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.2.4/claude-statusline_Linux_arm64.tar.gz"
-      sha256 "d605c1b71e3a6b13be7b1a1e6df5b7cac7f57775671f2584ea945f888d34bb36"
+      url "https://github.com/callmemorgan/claude-statusline/releases/download/v1.3.0/claude-statusline_Linux_arm64.tar.gz"
+      sha256 "b1c5889ff4fdab300f044e5862f1847187a5f713ae41255aa46b5af90c9bcddc"
       define_method(:install) do
         bin.install "claude-statusline"
       end
